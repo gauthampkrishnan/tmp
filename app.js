@@ -43,7 +43,7 @@ function closeModal() {
 
 function sendOrder(productId) {
     const orderDetails = "Hi, I would like to place an Order " + productId
-    const whatsappNumber = '8921494337'; // Replace with your WhatsApp phone number
+    const whatsappNumber = 8921494337; // Replace with your WhatsApp phone number
 
     const encodedMessage = encodeURIComponent(orderDetails);
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
