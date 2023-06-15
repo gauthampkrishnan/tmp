@@ -1,3 +1,4 @@
+console.log("Welcome")
 let mainMenu = document.getElementById('main_menu');
 let closeMenu = document.getElementById('close_menu');
 let openMenu = document.getElementById('open_menu');
@@ -75,3 +76,73 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
+
+
+// document.getElementById('rightArrow').addEventListener('click', function () {
+//     document.getElementById('reviewsContainer').scrollBy({
+//         left: 200,
+//         behavior: 'smooth'
+//     });
+// });
+
+// document.getElementById('leftArrow').addEventListener('click', function () {
+//     document.getElementById('reviewsContainer').scrollBy({
+//         left: -200,
+//         behavior: 'smooth'
+//     });
+// });
+
+
+function scrollReviews(direction) {
+    const container = document.querySelector('.review-container');
+    const containerScrollAmount = container.scrollWidth - container.clientWidth;
+    const scrollDistance = 300;
+
+    if (direction === -1) {
+        container.scrollBy({ left: -scrollDistance, behavior: 'smooth' });
+    } else if (direction === 1) {
+        container.scrollBy({ left: scrollDistance, behavior: 'smooth' });
+    }
+}
+
+let currentIndex = 0
+const reviewContainer = document.querySelector('.review-container');
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+const reviews = reviewContainer.querySelectorAll('.review-card');
+
+
+prevButton.addEventListener('click', () => {
+    currentIndex = Math.max(currentIndex - 1, 0);
+    updateReviews();
+});
+
+nextButton.addEventListener('click', () => {
+    currentIndex = Math.min(currentIndex + 1, reviews.length - 1);
+    updateReviews();
+});
+
+function updateReviews() {
+    reviewContainer.scrollTo({
+        left: reviews[currentIndex].offsetLeft,
+        behavior: 'smooth'
+    });
+}
+
+updateReviews();
+
+const images = ['img/OIL.jpg', 'img/SHAMPOO.jpg'];
+let currentIndexx = 0;
+
+function changeImage() {
+    const image = document.querySelector('.photo-slider__image');
+    image.style.opacity = 2;
+
+    setTimeout(() => {
+        currentIndexx = (currentIndexx + 1) % images.length;
+        image.src = images[currentIndexx];
+        image.style.opacity = 2;
+    }, 3000); // Change photo every 5 seconds
+}
+
+setInterval(changeImage, 5000);

@@ -5,13 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaidyamrutam</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" 
      type="image/png" 
      href="img/logo.png">
     <link rel="stylesheet" href="dist/output.css">
 </head>
 <style>
+h1 {
+  color: #007600 !important;
+}
+  /* Adjust the container width as needed */
+ 
+
+
+
+#reviewsContainer::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+#reviewsContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.review-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+
+    .review-card:not(:nth-child(-n+2)) {
+      display: none;
+    }
+#reviewsContainer::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#reviewsContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
   .testimonial-shadow {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -45,20 +77,83 @@
   height: 100px; /* Adjust the height as needed */
   object-fit: contain;
 }
+
+.photo-slider {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-slider__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  transition: opacity 0.1s ease;
+}
+
+@media (max-width: 768px) {
+  .photo-slider__image {
+    max-height: 400px; /* Adjust the desired max height for mobile screens */
+  }
+}
+
+.review-card{
+  width: 400px;
+  height: 250px;
+  margin-bottom: 5px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+header {
+  margin-top: 0;
+}
+
+.footer {
+      width: 500px;
+      height: 500px;
+      margin-top: 5px;
+      background-color: #f2f2f2;
+      color: #007600 !important;
+      padding: 200px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+
+
+
+
+
+
 </style>
 <header class="logo-gradient">
  
-    <nav class=" mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 sticky top-0 z-10" aria-label="Global">
+    <nav class=" mx-auto flex max-w-7xl items-center justify-between  lg:px-1 sticky top-0 z-10" aria-label="Global">
       <div class="flex lg:flex-1 items-center">
-        <a href="#" class="-m-1.5 p-1.5 flex items-center">
-          <span class="sr-only">Your Company</span>
-          <img class="h-24 w-auto ml-4" src="img/ayurvedic-medicine-removebg-preview.png">
+      
+      <img class="h-24 w-auto" src="img/logo_name.png">
+      </div>
+      <!-- <div class="flex lg:flex-1 items-center"> -->
+        <!-- <a href="#" class="-m-1.5 p-1.5 flex items-center">
+          <span class="sr-only">Your Company</span> -->
+          <!-- <img class="h-24 w-auto ml-4" src="img/ayurvedic-medicine-removebg-preview.png"> -->
        
-          <img class="h-24 w-auto" src="img/logo_name.png">
+          
+            <!-- <span class="text-gray-500 text-sm">Logo Caption</span> -->
+                <!-- </div> -->
         
       
-        </a>
-      </div>
+        <!-- </a> -->
+    
       <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" id="open_menu">
           <span class="sr-only">Open main menu</span>
@@ -69,13 +164,13 @@
       </div>
       <div class="hidden lg:flex lg:gap-x-12 ">
         <div class="relative">
-          <a href="#products" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
+          <a href="#products" class="text-md  text-xl leading-6 text-gray-900">Products</a>
   
        
         </div>
   
-        <a href="#aboutus" class="text-sm font-semibold leading-6 text-gray-900">About Us</a>
-        <a href="#testimonials" class="text-sm font-semibold leading-6 text-gray-900">Testimonials</a>
+        <a href="#aboutus" class="text-md  text-xl leading-6 text-gray-900">About Us</a>
+        <a href="#testimonials" class="text-md text-xl leading-6 text-gray-900">Testimonials</a>
         <!-- <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a> -->
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -130,29 +225,43 @@
       </div>
     </div>
   </header>
+<body >
 
+<!-- SlideShow -->
+<div class="flex justify-center items-center mt-2 mb-3">
+<div class="photo-slider">
+  <img src="img/SHAMPOO.jpg" alt="Photo 1" class="photo-slider__image">
+
+</div>
+</div>
 
   
 
   <!-- PRODUCTS -->
-  <h1 id="products" class="text-center mt-4 text-3xl">Products</h1>
+  <p id="products" class="text-center text-gray-800 font-bold  text-3xl">Products</p>
+
 
 
   
   <div class="flex flex-wrap flex-col items-center  gap-4 justify-center mt-8 md:flex-row md:items-center">
-    <div class="  px-20 border border-green-800 flex flex-col justify-center items-center relative rounded-md">
-      <h1 class="text-center font-medium">Vaidyamrutam Haircare Oil</h1>
-      <img src="img/hair_care_oil.png" alt="Image 1" class="object-contain h-64 w-full">
-      <div class="flex flex-row justify-center mt-2">
-        <button class="bg-green-800 text-white py-2 px-4 rounded-lg m-2" onclick="sendOrder('Herbal Oil')">Buy</button>
+    <div class="  px-20 border border-green-800 flex flex-col justify-center items-center relative ">
+      
+      <img src="img/1.jpg" alt="Image 1" class="object-contain h-64 w-full">
+      
+             <p class="text-center font-medium text-green-950">Vaidyamrutam Haircare Oil</p>
+            <p class="text-gray-500">Reduces Hairfall | New Hair Grows</p>
+             <div class="flex flex-row justify-center mt-2">
+        <button class="bg-green-800 text-white py-2 px-4 rounded-lg m-2" onclick="sendOrder('Herbal Oil')">Coming Soon!</button>
         <button class="bg-green-800 text-white py-2 px-4 rounded-lg m-2" onclick="openModal('product1')">Info</button>
       </div>
     </div>
-    <div class=" px-24 border border-green-800 flex flex-col justify-center items-center relative rounded-md">
-      <h1 class="text-center font-medium">Aditi Herbal Shampoo</h1>
-      <img src="img/herbal_shampoo.png" alt="Image 2" class="object-contain h-64 w-full">
+    <div class=" px-20 border border-green-800 flex flex-col justify-center items-center relative ">
+      
+      <img src="img/2.jpg" alt="Image 2" class="object-contain h-64 w-full">
+      <p class="text-center text-black font-medium">Aditi Herbal Shampoo</p>
+      <p class="text-gray-500">Prevents Hair Breakage</p>
       <div class="flex flex-row justify-center mt-2">
-        <button class="bg-green-800 text-white py-2 px-4 rounded-lg m-2" onclick="sendOrder('Herbal Shampoo')">Buy</button>
+        <button class="bg-green-800 text-white py-2 px-4 rounded-lg m-2" onclick="sendOrder('#Herbal Shampoo')">Coming Soon!</button>
         <button class="bg-green-800 text-white py-2 px-4 rounded-lg m-2" onclick="openModal('product2')">Info</button>
       </div>
     </div>
@@ -170,195 +279,152 @@
   </div>
   
   <!-- ABOUT US -->
-  <h1 id="aboutus" class="text-center text-3xl mt-10">About Us</h1>
-  <p class="text-center m-5 text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque perferendis porro nobis dolores voluptate incidunt adipisci. Similique ducimus voluptatem, soluta recusandae quam excepturi explicabo veritatis quisquam culpa reprehenderit nobis magnam consectetur! Nostrum quidem ducimus culpa aut molestias laboriosam non repudiandae nobis ullam iusto illo officiis, quae maxime aliquid tenetur distinctio! Numquam officiis totam error assumenda aliquam quam enim! Rem, incidunt odio inventore in quam nostrum dolorum dicta ipsum odit aspernatur enim laboriosam ullam aut assumenda voluptatibus quo vel soluta placeat reprehenderit deserunt. Iure nam praesentium corrupti laboriosam perferendis aliquam vitae, illum porro sit, architecto sunt possimus culpa incidunt qui voluptate!Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore odio aspernatur quod repudiandae ab tenetur expedita vitae dignissimos laudantium.</p>
-
+  <p id="aboutus" class="text-center text-3xl text-gray-800 font-bold mt-10">About Us</p>
+ 
+ <div class="flex flex-col items-center justify-center ">
+  <img src="img/SHAMPOO.jpg" alt="" width="400px" height="400px" class="m-5">
+  <p class=" text-xl  mx-4 text-center">Vaidyamrutam is an Ayurvedic brand developed by Dr. Vineetha Manoj, an experienced Ayurveda physician specializing in hair and skin treatments for over sixteen years. She created Vaidyamrutam Hair oil specifically to help patients with alopecia areata, and it has been clinically proven and successfully used for nine years. Dr. Manoj's journey started when she experimented with a formula for a patient with alopecia areata and achieved impressive results. Following this success, Vaidyamrutam underwent extensive clinical trials, showing its effectiveness in treating various types of hair fall. To enhance its offerings, Vaidyamrutam also provides other excellent hair care products, such as Aditi Herbal shampoo for gentle cleansing and Hima Hair Pack for nourishing hair roots, increasing thickness, and promoting hair growth. Vaidyamrutam is a trusted Ayurvedic brand that offers a diverse range of beauty and personal care solutions.</p>
+  
+  </div>
+  
 <!-- Testimonials -->
-<h1 id="testimonials" class="text-center text-3xl mt-5 mb-5">Testimonials</h1>
-<div class="flex flex-row ">
-  <div class="testimonial-container">
-    
-    <section class="testimonial-shadow first-letter:relative isolate overflow-hidden bg-white px-6 py-2 sm:py-10 lg:px-8">
-      <!-- Testimonial 1 -->
-      <!-- Add your content here -->
-      <figure class="mt-10">
-        <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-          <p>“Hi
-            I am using Vaidyamrutam hair oil for more
-            than 6 months. My hair fall has reduced a lot.
-            This also helps to improve my hair growth. I
-            am very satisfied using hair oil and shampoo
-            and I highly recommend this hair oil and
-            shampoo.”</p>
-        </blockquote>
-        <figcaption class="mt-3">
-          <!-- <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> -->
-          <div class="mt-4 flex items-center justify-center space-x-3 text-base">
-            <div class="font-semibold text-gray-900">Hansa J Thattil
-            (Assisstant professor FISAT)</div>
-            <!-- <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
-              <circle cx="1" cy="1" r="1" />
-            </svg> -->
-            <!-- <div class="text-gray-600">CEO of Workcation</div> -->
-          </div>
-        </figcaption>
-      </figure>
-    </section>
-    
-  </div>
+<!-- Testimonials -->
+<h1 id="testimonials" class="text-center text-3xl m-5 ">Testimonials</h1>
+<div class="flex items-center justify-center">
+  <div class="review-container flex items-center space-x-4">
+    <div class="review-card bg-white rounded-lg shadow-md p-4">
+      <p class="text-center text-gray-950">Hi, I am using Vaidyamrutam hair oil for more than 6 months. My hair fall has reduced a lot. This also helps to improve my hair growth. I am very satisfied using hair oil and shampoo and I highly recommend this hair oil and shampoo.</p>
+      <p class="text-gray-600 font-medium text-center">Hansa J Thattil (Assistant professor FISAT)</p>
+    </div>
+    <div class="review-card bg-white rounded-lg shadow-md p-4">
+      <p class="text-center text-gray-950">I have personally used Vaidyamrutham
+        Ayurvedic Hair Oil and Aditi shampoo. Both
+        are very effective for prevention of Hair
+        Loss and for good cleansing of the scalp.
+        Have used Virgin Coconut Oil and Rasnadi
+        for my grand son. Very good products for
+        baby's health.</p>
+      <p class="text-gray-600 font-medium text-center mt-2">Dr. Suma</p>
+    </div>
+    <div class="review-card bg-white rounded-lg shadow-md p-4">
+      <p class="text-center text-gray-950">Really happy to share the
+        positive vibes of the
+        Ayurveda hair care oil -
+        Vaidyamrutham of Dr.
+        Vineetha!lt reduces hair
+        fall& accelerates hair
+        growth within weeks.</p>
+      <p class="text-gray-600 font-medium text-center mt-2">Jayalakshmi</p>
+    </div>
+    <div class="review-card bg-white rounded-lg shadow-md p-4">
+      <p class="text-center text-gray-950">I am using
+        vaidyamrutam hairoil
+        since one year and
+        totally satisfied with
+        the product. I reduced
+        my hairfall and my hair
+        became healthy and
+        strong. Thankyou
+        vaidyamrutam</p>
+      <p class="text-gray-600 font-medium text-center mt-2">Karthika</p>
+    </div> 
 
-  <div class="testimonial-container">
-    <section class="testimonial-shadow relative isolate overflow-hidden bg-white px-6 py-2 sm:py-10 lg:px-8">
-      <!-- Testimonial 2 -->
-      <!-- Add your content here -->
-      <figure class="mt-10">
-        <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-          <p>“I have personally used Vaidyamrutham Ayurvedic Hair Oil and Aditi shampoo. Both
-            are very effective for prevention of Hair Loss and for good cleansing of the scalp. Have used Virgin Coconut Oil and Rasnadi for my grand son. Very good products for baby's health.
-            ”</p>
-        </blockquote>
-        <figcaption class="mt-3">
-          <!-- <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> -->
-          <div class="mt-4 flex items-center justify-center space-x-3 text-base">
-            <div class="font-semibold text-gray-900">Dr.Suma
-            </div>
-            <!-- <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
-              <circle cx="1" cy="1" r="1" />
-            </svg> -->
-            <!-- <div class="text-gray-600">CEO of Workcation</div> -->
-          </div>
-        </figcaption>
-      </figure>
-    </section>
-  </div>
-
-  <div class="testimonial-container">
-    <section class="testimonial-shadow relative isolate overflow-hidden bg-white px-6 py-2 sm:py-10 lg:px-8">
-      <!-- Testimonial 3 -->
-      <!-- Add your content here -->
-      <figure class="mt-10">
-        <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-          <p>“Really happy to share the positive vibes of the Ayurveda hair care oil - Vaidyamrutham of Dr. Vineetha!It reduces hair fall& accelerates hair growth within weeks.”</p>
-        </blockquote>
-        <figcaption class="mt-3">
-          <!-- <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> -->
-          <div class="mt-4 flex items-center justify-center space-x-3 text-base">
-            <div class="font-semibold text-gray-900">Jayalakshmi
-          </div>
-            <!-- <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
-              <circle cx="1" cy="1" r="1" />
-            </svg> -->
-            <!-- <div class="text-gray-600">CEO of Workcation</div> -->
-          </div>
-        </figcaption>
-      </figure>
-    </section>
+    <div class="review-card bg-white rounded-lg shadow-md p-4">
+      <p class="text-center text-gray-950">എന്റെ രണ്ടാമത്തെ delivery കഴിഞ്ഞപ്പോൾ
+        മുതൽ നല്ല രീതിയിൽ എനിക്ക് മുടി
+        കൊഴിച്ചിൽ ഉണ്ടായിരുന്നു അത്യാവശ്യം
+        നീളം ഉള്ള frizzy ഹെയർ ആണ് എന്റേത്
+        കുളികഴിഞ്ഞു മുടി ചീകാൻ
+        പേടിയായിരുന്നു അതുപോലെ മുടി
+        കൊഴിയുന്നുണ്ടാർന്നു.ഇപ്പൊ ഒരു 10 മാസം
+        ആയിട്ട് ഞാൻ വൈദ്യാമൃതം ഹെയർ
+        ഓയിലും ഷാംപൂ ആണ് ഉപയോഗിക്കുന്നത്
+        ..സത്യം പറഞ്ഞാൽ ഇത്രേം മാറ്റം ഉണ്ടാകും
+        എന്ന് ഒട്ടും പ്രതീക്ഷിച്ചില്ല,മുൻപത്തെ വെച്ച്
+        നോക്കുവാണേൽ ഇപ്പോ മുടികൊഴിച്ചിൽ
+        ഇല്ലെന്നു തന്നെ പറയാം മുടിയുടെ frizzines
+        ഒക്കെ മാറി ശെരിക്കും soft ആയി ഷാംപൂ
+        ലെ chemicals കൊണ്ടാണ് frizines
+        ഉണ്ടാവണത് എന്ന് അന്ന് പറഞ്ഞപ്പോൾ
+        ഞാൻ വിശ്വസിച്ചില്ലായിരുന്നു
+        അനുഭവത്തിലൂടെ മനസ്സിലായി ..
+        Really thank you so much</p>
+      <p class="text-gray-600 font-medium text-center mt-2">Sony</p>
+    </div>
+    <!-- Add more testimonial cards here -->
   </div>
 </div>
-
-<div class="flex flex-col md:flex-row ">
-  <div class="testimonial-container">
-    <section class="testimonial-shadow relative isolate overflow-hidden bg-white px-6 py-2 sm:py-10 lg:px-8">
-      <!-- Testimonial 4 -->
-      <!-- Add your content here -->
-      <figure class="mt-10">
-        <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-          <p>“I am using vaidyamrutam hairoil since one year and totally satisfied with the product. I reduced my hairfall and my hair became healthy and strong. Thank You Vaidyamrutam”</p>
-        </blockquote>
-        <figcaption class="mt-3">
-          <!-- <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> -->
-          <div class="mt-4 flex items-center justify-center space-x-3 text-base">
-            <div class="font-semibold text-gray-900">Karthika
-          </div>
-            <!-- <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
-              <circle cx="1" cy="1" r="1" />
-            </svg> -->
-            <!-- <div class="text-gray-600">CEO of Workcation</div> -->
-          </div>
-        </figcaption>
-      </figure>
-    </section>
-  </div>
-
-  <div class="testimonial-container">
-    <section class="testimonial-shadow relative isolate overflow-hidden bg-white px-6 py-2 sm:py-10 lg:px-8">
-      <!-- Testimonial 5 -->
-      <!-- Add your content here -->
-      <figure class="mt-10">
-        <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-          <p>“I have been using her products
-            for almost a yr.
-            Hair oil, shampoo, hair mask
-            and my recent fav is ventha
-            vellichenna. I am using this oil for
-            my baby from his birth.
-            The smell itself is refreshing. I
-            have tried some other brands
-            before, but it was not at all
-            satisfactory. The product is
-            also cost effective. I will surely
-            recommend this for others too.”</p>
-        </blockquote>
-        <figcaption class="mt-3">
-          <!-- <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> -->
-          <div class="mt-4 flex items-center justify-center space-x-3 text-base">
-            <div class="font-semibold text-gray-900">
-            </div>
-            <!-- <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
-              <circle cx="1" cy="1" r="1" />
-            </svg> -->
-            <!-- <div class="text-gray-600">CEO of Workcation</div> -->
-          </div>
-        </figcaption>
-      </figure>
-    </section>
-  </div>
-
-  <div class="testimonial-container">
-    <section class="testimonial-shadow md:shadow relative isolate overflow-hidden bg-white px-6 py-2 sm:py-10 lg:px-8">
-      <!-- Testimonial 6 -->
-      <!-- Add your content here -->
-      <figure class="mt-10">
-        <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-          <p>"Your medicines are really working
-            wonders
-            didn't come
-            across such potent haircare
-            products so far
-            Its been just 10 days using your
-            hair oil, hair pack and shampoo,
-            the result is amazing"</p>
-        </blockquote>
-        <figcaption class="mt-3">
-          <!-- <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> -->
-          <div class="mt-4 flex items-center justify-center space-x-3 text-base">
-            <div class="font-semibold text-gray-900"></div>
-            <!-- <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
-              <circle cx="1" cy="1" r="1" />
-            </svg> -->
-            <!-- <div class="text-gray-600">CEO of Workcation</div> -->
-          </div>
-        </figcaption>
-      </figure>
-    </section>
-  </div>
+<div class="arrows flex items-center justify-center m-4 gap-4">
+  <button id="prevButton" class="bg-green-800 text-white py-2 px-4 rounded-lg">&lt;</button>
+  <button id="nextButton" class="bg-green-800 text-white py-2 px-4 rounded-lg">&gt;</button>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    var testimonials = $(".review-card");
+    var currentIndex = 0;
+    var maxIndex = testimonials.length - 1;
+    var cardsPerView = 2;
+
+    function showTestimonials() {
+      testimonials.hide();
+      for (var i = currentIndex; i < currentIndex + cardsPerView; i++) {
+        testimonials.eq(i).show();
+      }
+    }
+
+    function navigateTestimonials(direction) {
+      if (direction === "next" && currentIndex < maxIndex - (cardsPerView - 1)) {
+        currentIndex++;
+      } else if (direction === "prev" && currentIndex > 0) {
+        currentIndex--;
+      }
+      showTestimonials();
+    }
+
+    showTestimonials();
+
+    $("#nextButton").on("click", function() {
+      navigateTestimonials("next");
+    });
+
+    $("#prevButton").on("click", function() {
+      navigateTestimonials("prev");
+    });
+  });
+</script>
+  
+  
+
 
  
-<footer class="bg-gray-900 text-white">
-  <!-- <div class="container mx-auto py-8 px-4">
-    <!<div class="flex flex-col md:flex-row justify-between"> -->
-      <div class="mb-4 md:mb-0">
-        <!-- <h2 class="text-2xl font-bold">Vidyamrutam</h2> -->
-        <!-- <! <p class="mt-2">123 Street, City</p> - -->
-        <!-- <p>Country</p> --> 
+
+<div class="bg-green-500 h-500px">
+  <div class="max-w-screen-xl mx-auto px-4 py-8">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="img/logo_name.png" alt="Logo" class="h-10">
+        <ul class="flex space-x-4">
+          
+          <li>
+            <a href="#" class="fa fa-instagram">
+             
+            </a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-facebook">
+             
+            </a>
+          </li>
+        </ul>
       </div>
-      
-    <!-- </div> --> 
-    <!-- <hr class="my-4 border-gray-600"> --> 
-    <p class="text-center text-sm">© 2023 Your Company. All rights reserved.</p>
+      <p class="text-black">&copy; 2023 Vaidyamrutam. All rights reserved.</p>
+    </div>
   </div>
-</footer>
+</div>
+
+</body>
 
   
 <script src="app.js"></script>
