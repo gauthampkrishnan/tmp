@@ -105,9 +105,27 @@ h1 {
 
 .review-card{
   width: 400px;
-  height: 250px;
+  height:300px;
   margin-bottom: 5px;
 }
+/* Styles for mobile view */
+@media (max-width: 767px) {
+  .review-card {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Styles for desktop view */
+@media (min-width: 768px) {
+  .review-card {
+    width: 400px;
+    height: 200px;
+    margin-bottom: 5px;
+  }
+}
+
 .fa-facebook {
   background: #3B5998;
   color: white;
@@ -292,11 +310,11 @@ header {
 <h1 id="testimonials" class="text-center text-3xl m-5 ">Testimonials</h1>
 <div class="flex items-center justify-center">
   <div class="review-container flex items-center space-x-4">
-    <div class="review-card bg-white rounded-lg shadow-md p-4">
+    <div class="review-card bg-white rounded-lg shadow-md p-8">
       <p class="text-center text-gray-950">Hi, I am using Vaidyamrutam hair oil for more than 6 months. My hair fall has reduced a lot. This also helps to improve my hair growth. I am very satisfied using hair oil and shampoo and I highly recommend this hair oil and shampoo.</p>
       <p class="text-gray-600 font-medium text-center">Hansa J Thattil (Assistant professor FISAT)</p>
     </div>
-    <div class="review-card bg-white rounded-lg shadow-md p-4">
+    <div class="review-card bg-white rounded-lg shadow-md p-8">
       <p class="text-center text-gray-950">I have personally used Vaidyamrutham
         Ayurvedic Hair Oil and Aditi shampoo. Both
         are very effective for prevention of Hair
@@ -306,7 +324,7 @@ header {
         baby's health.</p>
       <p class="text-gray-600 font-medium text-center mt-2">Dr. Suma</p>
     </div>
-    <div class="review-card bg-white rounded-lg shadow-md p-4">
+    <div class="review-card bg-white rounded-lg shadow-md p-8">
       <p class="text-center text-gray-950">Really happy to share the
         positive vibes of the
         Ayurveda hair care oil -
@@ -316,7 +334,7 @@ header {
         growth within weeks.</p>
       <p class="text-gray-600 font-medium text-center mt-2">Jayalakshmi</p>
     </div>
-    <div class="review-card bg-white rounded-lg shadow-md p-4">
+    <div class="review-card bg-white rounded-lg shadow-md p-8">
       <p class="text-center text-gray-950">I am using
         vaidyamrutam hairoil
         since one year and
@@ -329,7 +347,7 @@ header {
       <p class="text-gray-600 font-medium text-center mt-2">Karthika</p>
     </div> 
 
-    <div class="review-card bg-white rounded-lg shadow-md p-4">
+    <div class="review-card bg-white rounded-lg shadow-md p-8">
       <p class="text-center text-gray-950">എന്റെ രണ്ടാമത്തെ delivery കഴിഞ്ഞപ്പോൾ
         മുതൽ നല്ല രീതിയിൽ എനിക്ക് മുടി
         കൊഴിച്ചിൽ ഉണ്ടായിരുന്നു അത്യാവശ്യം
