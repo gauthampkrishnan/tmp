@@ -142,7 +142,7 @@ function changeImage() {
         currentIndexx = (currentIndexx + 1) % images.length;
         image.src = images[currentIndexx];
         image.style.opacity = 2;
-    }, 3000); // Change photo every 5 seconds
+    }, 2000); // Change photo every 5 seconds
 }
 
-setInterval(changeImage, 5000);
+setInterval(changeImage, 3000);
