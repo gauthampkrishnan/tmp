@@ -147,6 +147,11 @@ header {
     }
 
 
+    .text-custom-small {
+    font-size: 12px;
+    font-style: italic;
+    color: #007600;
+  }
 
 
 
@@ -156,21 +161,25 @@ header {
 <header>
  
     <nav class=" mx-auto flex max-w-7xl items-center justify-between  lg:px-1 sticky top-0 z-10" aria-label="Global">
-      <div class="flex lg:flex-1 items-center">
-      
-      <img class="h-24 w-auto" src="img/logo_name.png">
+      <div class="flex flex-col lg:flex-1 items-start">
+        <div class="relative">
+          <span class="trademark absolute text-custom-small" style="margin-left: 70px; margin-top: 10px;">&#174;</span>
+          <img class="h-24 w-auto" src="img/logo_name.png" alt="Logo">
+        </div>
+        <p class="text-custom-small" style="margin-top: -20px; margin-left: 45px; font-style: italic;">"Heal through Ayurveda"</p> 
       </div>
-      <!-- <div class="flex lg:flex-1 items-center"> -->
-        <!-- <a href="#" class="-m-1.5 p-1.5 flex items-center">
-          <span class="sr-only">Your Company</span> -->
-          <!-- <img class="h-24 w-auto ml-4" src="img/ayurvedic-medicine-removebg-preview.png"> -->
+      
+      <!-- <div class="flex flex-col lg:flex-1 items-center"> 
+       <a href="#" class="-m-1.5 p-1.5 flex items-center">
+          <p class="text-black">Heal through Ayurveda</p> 
+           <img class="h-24 w-auto ml-4" src="img/ayurvedic-medicine-removebg-preview.png"> -->
        
           
             <!-- <span class="text-gray-500 text-sm">Logo Caption</span> -->
                 <!-- </div> -->
         
       
-        <!-- </a> -->
+         <!-- </a> --> 
     
       <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" id="open_menu">
