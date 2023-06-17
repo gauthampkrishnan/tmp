@@ -61,6 +61,8 @@ function getProductDetails(productId) {
         sendOrder(productId)
     } else if (productId === 'product2') {
         return "Vaidyamrutam hair care oil suggests the use of Aditi herbal shampoo which is added with a natural formula of aloe vera and Triphala which acts as an antibacterial cleanser for the hair. It's an anti-dandruff and mild shampoo that can be used on a daily basis <br> Clinically proven, mild herbal shampoo for hair fall control. It nourishes, conditions and moisturises the scalp.";
+    } else if (productId === 'product4') {
+        return "Ventha velichenna / hot processed coconut oil is made from pure coconut milk. Vaidyamrutam ventha velichenna is organic product prepared in a traditional way with attractive aroma. It is rich in antioxidants. Hot processed virgin coconut oil moisturises skin and hair. It nourishes skin and improves skin texture. It prevents dandruff and split ends of hair. It helps to repair your skin and makes it soft. Improves hair growth. It is the best baby massage oil."
     }
     return '';
 }
