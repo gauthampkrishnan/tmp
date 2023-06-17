@@ -9,7 +9,7 @@
   <link rel="icon" 
      type="image/png" 
      href="img/logo.png">
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="output.css">
 </head>
 
 
@@ -121,6 +121,11 @@
 .fa-facebook {
   background: #3B5998;
   color: white;
+}
+
+.fa-map-marker,.fa-phone,.fa-clock-o{
+  color:#69aa4f;
+  font-size:36px;
 }
 
 header {
@@ -236,16 +241,16 @@ header {
     </div>
   </header>
 <body >
-<div class="flex justify-center items-center">
+<!-- <div class="flex justify-center items-center">
   <div class="photo-slider">
-    <img src="img/Untitled design (1).png" alt="Photo 1" class="photo-slider__image">
+    <img src="img/OIL.jpg" alt="Photo 1" class="  rounded-md">
   </div>
-</div>
+</div> -->
 
   
 
   <!-- PRODUCTS -->
-  <div class="mt-10">
+<div class="mt-10">
   <h1 id="products" class="text-center font-arima font-semibold text-3xl m-4" >Products</h1>
 
 
@@ -291,7 +296,7 @@ header {
     <img src="img/SHAMPOO.jpg" alt="" width="400px" height="400px" class="m-5 rounded-md">
     <div class="flex flex-col items-center justify-center">
       <h1 class="font-arima font-semibold text-3xl p-5 mb-4">About Us</h1>
-      <p class="mx-4 text-center ">Vaidyamrutam is an Ayurvedic brand developed by Dr. Vineetha Manoj, an experienced Ayurveda physician specializing in hair and skin treatments for over sixteen years. She created Vaidyamrutam Hair oil specifically to help patients with alopecia areata, and it has been clinically proven and successfully used for nine years. Dr. Manoj's journey started when she experimented with a formula for a patient with alopecia areata and achieved impressive results. Following this success, Vaidyamrutam underwent extensive clinical trials, showing its effectiveness in treating various types of hair fall. To enhance its offerings, Vaidyamrutam also provides other excellent hair care products, such as Aditi Herbal shampoo for gentle cleansing and Hima Hair Pack for nourishing hair roots, increasing thickness, and promoting hair growth. Vaidyamrutam is a trusted Ayurvedic brand that offers a diverse range of beauty and personal care solutions.</p>
+      <p class="mx-4 text-center ">Vaidyamrutam is an Ayurvedic brand developed by Dr. Vineetha Manoj, an experienced Ayurveda physician specializing in hair and skin treatments for over sixteen years. She created Vaidyamrutam Hair oil specifically to help patients with alopecia areata, and it has been clinically proven and successfully used for nine years. Dr. Vineetha Manoj's journey started when she experimented with a formula for a patient with alopecia areata and achieved impressive results. Following this success, Vaidyamrutam underwent extensive clinical trials, showing its effectiveness in treating various types of hair fall. To enhance its offerings, Vaidyamrutam also provides other excellent hair care products, such as Aditi Herbal shampoo for gentle cleansing and Hima Hair Pack for nourishing hair roots, increasing thickness, and promoting hair growth. Vaidyamrutam is a trusted Ayurvedic brand that offers a diverse range of beauty and personal care solutions.</p>
     </div>
   </div>
   
@@ -299,20 +304,24 @@ header {
 </div>
   
   
-  
-<!-- Testimonials -->
+<h1  class="text-center text-3xl m-10 font-semibold font-arima">Gallery</h1>
+<div class="flex flex-row flex-wrap justify-center items-center  gap-4 ">
+  <img src="img/OIL.jpg" alt="" class="h-64 flex-auto object-contain rounded-md">
+<img src="img/SHAMPOO.jpg" alt="" class="h-64 flex-auto object-contain rounded-md">
+</div>
+
 <!-- Testimonials -->
 <h1 id="testimonials" class="text-center text-3xl m-10 font-semibold font-arima">Testimonials</h1>
 <div class="flex items-center justify-center">
 
   <div class="review-container flex items-center space-x-4">
     
-    <div class="review-card bg-white rounded-lg shadow-md p-8">
+    <div class="review-card bg-white rounded-lg shadow-xl p-8">
       <p class="text-center text-gray-950">Hi, I am using Vaidyamrutam hair oil for more than 6 months. My hair fall has reduced a lot. This also helps to improve my hair growth. I am very satisfied using hair oil and shampoo and I highly recommend this hair oil and shampoo.</p>
       <p class="text-gray-600 font-medium text-center">Hansa J Thattil (Assistant professor FISAT)</p>
     </div>
 
-    <div class="review-card bg-white rounded-lg shadow-md p-8">
+    <div class="review-card bg-white rounded-lg shadow-xl p-8">
       <p class="text-center text-gray-950">I have personally used Vaidyamrutham
         Ayurvedic Hair Oil and Aditi shampoo. Both
         are very effective for prevention of Hair
@@ -322,7 +331,7 @@ header {
         baby's health.</p>
       <p class="text-gray-600 font-medium text-center mt-2">Dr. Suma</p>
     </div>
-    <div class="review-card bg-white rounded-lg shadow-md p-8">
+    <div class="review-card bg-white rounded-lg shadow-xl p-8">
       <p class="text-center text-gray-950">Really happy to share the
         positive vibes of the
         Ayurveda hair care oil -
@@ -332,7 +341,7 @@ header {
         growth within weeks.</p>
       <p class="text-gray-600 font-medium text-center mt-2">Jayalakshmi</p>
     </div>
-    <div class="review-card bg-white rounded-lg shadow-md p-8">
+    <div class="review-card bg-white rounded-lg shadow-xl p-8">
       <p class="text-center text-gray-950">I am using
         vaidyamrutam hairoil
         since one year and
@@ -345,7 +354,7 @@ header {
       <p class="text-gray-600 font-medium text-center mt-2">Karthika</p>
     </div> 
 
-    <div class="review-card bg-white rounded-lg shadow-md p-8">
+    <div class="review-card bg-white rounded-lg shadow-xl p-8">
       <p class="text-center text-gray-950">
       ഒട്ടും പ്രതീക്ഷിച്ചില്ല,മുൻപത്തെ വെച്ച്
         നോക്കുവാണേൽ ഇപ്പോ മുടികൊഴിച്ചിൽ
@@ -362,6 +371,64 @@ header {
   <button id="nextButton" class="bg-green-800 text-white py-2 px-4 rounded-lg">&gt;</button>
 </div>
 
+
+<h1 id="testimonials" class="text-center text-3xl m-10 font-semibold font-arima">Contact Us</h1>
+<div class="flex flex-row justify-center items-center rounded-lg gap-4">
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=76.41592025756836%2C10.118342398699617%2C76.42094135284425%2C10.12203378611291&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=18/10.12019/76.41843"></a></small>
+
+  <div class="flex flex-col justify-center items-center">
+  <a href="#" class="fa fa-map-marker">
+             
+  </a>
+  <h1 class="font-medium text-xl">Our Location</h1>
+  <p class="p-5 text-center font-medium text-lg ">Shreegouri Ayurvedics<br></p>
+  <p class="font-medium text-lg">Vellarappilly South P.O
+    Thiruvairanikulam
+    Aluva
+    Pin:683580</p>
+
+    <a  href="#" class="fa fa-phone mt-5">
+             
+    </a>
+  <h1 class="font-medium text-xl">Customer Care</h1>
+  <p class="p-5 text-center font-medium text-lg ">+918921494337</p>
+
+  <a href="#" class="fa fa-clock-o">
+
+             
+  </a>
+  
+  <h1  class="font-medium text-xl">Our Timing</h1>
+  <p class="p-5 text-center font-medium text-lg ">Mon - Sun : 9am-5pm</p>
+</div>
+</div>
+
+
+
+<div >
+  <div class="max-w-screen-xl mx-auto px-0 py-2">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="img/logo_name.png" alt="Logo" class="h-10">
+        <ul class="flex space-x-4">
+          
+          <li>
+            <a href="#" class="fa fa-instagram">
+             
+            </a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-facebook">
+             
+            </a>
+          </li>
+        </ul>
+        <h1 class="text-black">&copy; 2023 Vaidyamrutam. All rights reserved.</h1>
+      </div>
+     
+    </div>
+  </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
   $(document).ready(function() {
@@ -403,30 +470,7 @@ header {
 
  
 
-<div >
-  <div class="max-w-screen-xl mx-auto px-0 py-2">
-    <div class="flex justify-between items-center">
-      <div class="flex items-center space-x-4">
-        <img src="img/logo_name.png" alt="Logo" class="h-10">
-        <ul class="flex space-x-4">
-          
-          <li>
-            <a href="#" class="fa fa-instagram">
-             
-            </a>
-          </li>
-          <li>
-            <a href="#" class="fa fa-facebook">
-             
-            </a>
-          </li>
-        </ul>
-        <h1 class="text-black">&copy; 2023 Vaidyamrutam. All rights reserved.</h1>
-      </div>
-     
-    </div>
-  </div>
-</div>
+
 
 </body>
 
