@@ -11,15 +11,10 @@
      href="img/logo.png">
     <link rel="stylesheet" href="dist/output.css">
 </head>
+
+
 <style>
-h1,a {
-  color: #007600 !important;
-}
-  /* Adjust the container width as needed */
- 
-
-
-
+  
 #reviewsContainer::-webkit-scrollbar {
   width: 0.5em;
   height: 0.5em;
@@ -66,9 +61,6 @@ h1,a {
 }
 .logo-container {
   background: linear-gradient(to bottom right, #69aa4f, white);
-  /* display: inline-block;
-  padding: 10px;
-  border-radius: 50%; */
 }
 
 .logo {
@@ -77,10 +69,14 @@ h1,a {
   height: 100px; /* Adjust the height as needed */
   object-fit: contain;
 }
+.component {
+  margin-top: 8px;
+}
 
 .photo-slider {
-  width: 1000px;
-  height: 1000px;
+  width: 1600px;
+  max-width: 1600px;
+  height: 600px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -111,7 +107,7 @@ h1,a {
 @media (max-width: 767px) {
   .review-card {
     width: 400px;
-    height: 600px;
+    height: 300px;
     margin-bottom: 5px;
   }
 }
@@ -120,7 +116,7 @@ h1,a {
 @media (min-width: 768px) {
   .review-card {
     width: 400px;
-    height: 200px;
+    height: 250px;
     margin-bottom: 5px;
   }
 }
@@ -136,11 +132,11 @@ header {
 
 .footer {
       width: 500px;
-      height: 500px;
+   
       margin-top: 5px;
       background-color: #f2f2f2;
       color: #007600 !important;
-      padding: 200px;
+     
       text-align: center;
       margin: 0 auto;
     }
@@ -157,35 +153,19 @@ header {
     
     
   }
-
-
-
-
-
 </style>
 <header>
  
-    <nav class=" mx-auto flex max-w-7xl items-center justify-between  lg:px-1 sticky top-0 z-10" aria-label="Global">
+    <nav class=" mx-auto flex max-w-7xl items-center justify-between  lg:px-1 sticky top-0 z-10 mb-10" aria-label="Global">
       <div class="flex flex-col lg:flex-1 items-start">
         <div class="relative">
           <img class="h-24 w-auto" src="img/logo_name.png" alt="Logo">
-          <span class="trademark absolute itext-custom-small" style="margin-left: 175px; margin-top:-51px;">&#174;</span>
+          <span class="trademark absolute itext-custom-small" style="margin-left: 175px; margin-top:-52px;">&#174;</span>
          
         </div>
         <p class="text-custom-small" style="margin-top: -20px; margin-left: 45px; font-style: italic;">"Heal through Ayurveda"</p> 
       </div>
       
-      <!-- <div class="flex flex-col lg:flex-1 items-center"> 
-       <a href="#" class="-m-1.5 p-1.5 flex items-center">
-          <p class="text-black">Heal through Ayurveda</p> 
-           <img class="h-24 w-auto ml-4" src="img/ayurvedic-medicine-removebg-preview.png"> -->
-       
-          
-            <!-- <span class="text-gray-500 text-sm">Logo Caption</span> -->
-                <!-- </div> -->
-        
-      
-         <!-- </a> --> 
     
       <div class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" id="open_menu">
@@ -197,13 +177,13 @@ header {
       </div>
       <div class="hidden lg:flex lg:gap-x-12 ">
         <div class="relative">
-          <a href="#products" class="text-md  text-xl leading-6 text-gray-900">Products</a>
+          <a href="#products" class="text-md  text-xl leading-6 text-gray-900 font-arima">Products</a>
   
        
         </div>
   
-        <a href="#aboutus" class="text-md  text-xl leading-6 text-gray-900">About Us</a>
-        <a href="#testimonials" class="text-md text-xl leading-6 text-gray-900">Testimonials</a>
+        <a href="#aboutus" class="text-md  text-xl leading-6 text-gray-900 font-arima">About Us</a>
+        <a href="#testimonials" class="text-md text-xl leading-6 text-gray-900 font-arima">Testimonials</a>
         <!-- <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a> -->
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -260,37 +240,34 @@ header {
   </header>
 <body >
 
-<!-- SlideShow
+<!-- SlideShow -->
 <div class="flex justify-center items-center mt-2 mb-3">
 <div class="photo-slider">
-  <img src="img/SHAMPOO.jpg" alt="Photo 1" class="photo-slider__image">
+  <img src="img/Untitled design (1).png" alt="Photo 1" class="photo-slider__image">
 
 </div>
 </div>
-
-   -->
-
-  <!-- PRODUCTS -->
-  <h1 id="products" class="text-center text-gray-800 font-bold  text-3xl">Products</h1>
-
-
 
   
-  <div class="flex flex-wrap flex-col items-center  gap-4 justify-center mt-8 md:flex-row md:items-center">
-    <div class="  px-20 border border-green-800 flex flex-col justify-center items-center relative ">
-      
-      <img src="img/1.jpg" alt="Image 1" class="object-contain h-64 w-full">
-      
-             <p class="text-center font-medium text-green-950">Vaidyamrutam Haircare Oil</p>
-            <p class="text-gray-500">Reduces Hairfall | New Hair Grows</p>
-             <div class="flex flex-row justify-center mt-2">
+
+  <!-- PRODUCTS -->
+  <div class="mt-10">
+  <h1 id="products" class="text-center font-arima font-semibold text-3xl m-4" >Products</h1>
+
+
+
+  <div class="flex flex-wrap flex-col items-center gap-4 justify-center mt-8 md:flex-row md:items-center">
+    <div class="px-20  flex flex-col justify-center items-center relative rounded-md" style="background-color: #effde1">
+      <img src="img/1.png" alt="Image 1" class="object-contain h-64 w-full" style="background-color: #effde1">
+      <p class="text-center font-medium text-green-950">Vaidyamrutam Haircare Oil</p>
+      <p class="text-gray-500">Reduces Hairfall | New Hair Grows</p>
+      <div class="flex flex-row justify-center mt-2">
         <button class="bg-green-800 text-white py-2 px-4 rounded-lg m-2">Coming Soon!</button>
         <button class="bg-green-800 text-white py-2 px-4 rounded-lg m-2" onclick="openModal('product1')">Info</button>
       </div>
     </div>
-    <div class=" px-20 border border-green-800 flex flex-col justify-center items-center relative ">
-      
-      <img src="img/2.jpg" alt="Image 2" class="object-contain h-64 w-full">
+    <div class="px-20 flex flex-col justify-center items-center relative rounded-md" style="background-color: #effde1">
+      <img src="img/2.png" alt="Image 2" class="object-contain h-64 w-full" style="background-color: #effde1">
       <p class="text-center text-black font-medium">Aditi Herbal Shampoo</p>
       <p class="text-gray-500">Prevents Hair Breakage</p>
       <div class="flex flex-row justify-center mt-2">
@@ -299,6 +276,8 @@ header {
       </div>
     </div>
   </div>
+  
+</div>
 
 
   
@@ -312,23 +291,33 @@ header {
   </div>
   
   <!-- ABOUT US -->
-  <h1 id="aboutus" class="text-center text-3xl mt-10">About Us</h1>
+ <div class="mt-10">
  
- <div class="flex flex-col items-center justify-center ">
-  <img src="img/SHAMPOO.jpg" alt="" width="400px" height="400px" class="m-5">
-  <p class="   mx-4 text-center">Vaidyamrutam is an Ayurvedic brand developed by Dr. Vineetha Manoj, an experienced Ayurveda physician specializing in hair and skin treatments for over sixteen years. She created Vaidyamrutam Hair oil specifically to help patients with alopecia areata, and it has been clinically proven and successfully used for nine years. Dr. Manoj's journey started when she experimented with a formula for a patient with alopecia areata and achieved impressive results. Following this success, Vaidyamrutam underwent extensive clinical trials, showing its effectiveness in treating various types of hair fall. To enhance its offerings, Vaidyamrutam also provides other excellent hair care products, such as Aditi Herbal shampoo for gentle cleansing and Hima Hair Pack for nourishing hair roots, increasing thickness, and promoting hair growth. Vaidyamrutam is a trusted Ayurvedic brand that offers a diverse range of beauty and personal care solutions.</p>
-  
+  <div class="flex flex-col items-center justify-center md:flex-row mt-10 md:mt-14">
+    <img src="img/SHAMPOO.jpg" alt="" width="400px" height="400px" class="m-5 rounded-md">
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="font-arima font-semibold text-3xl p-5 mb-4">About Us</h1>
+      <p class="mx-4 text-center ">Vaidyamrutam is an Ayurvedic brand developed by Dr. Vineetha Manoj, an experienced Ayurveda physician specializing in hair and skin treatments for over sixteen years. She created Vaidyamrutam Hair oil specifically to help patients with alopecia areata, and it has been clinically proven and successfully used for nine years. Dr. Manoj's journey started when she experimented with a formula for a patient with alopecia areata and achieved impressive results. Following this success, Vaidyamrutam underwent extensive clinical trials, showing its effectiveness in treating various types of hair fall. To enhance its offerings, Vaidyamrutam also provides other excellent hair care products, such as Aditi Herbal shampoo for gentle cleansing and Hima Hair Pack for nourishing hair roots, increasing thickness, and promoting hair growth. Vaidyamrutam is a trusted Ayurvedic brand that offers a diverse range of beauty and personal care solutions.</p>
+    </div>
   </div>
   
+  
+</div>
+  
+  
+  
 <!-- Testimonials -->
 <!-- Testimonials -->
-<h1 id="testimonials" class="text-center text-3xl m-5 ">Testimonials</h1>
+<h1 id="testimonials" class="text-center text-3xl m-10 font-semibold font-arima">Testimonials</h1>
 <div class="flex items-center justify-center">
+
   <div class="review-container flex items-center space-x-4">
+    
     <div class="review-card bg-white rounded-lg shadow-md p-8">
       <p class="text-center text-gray-950">Hi, I am using Vaidyamrutam hair oil for more than 6 months. My hair fall has reduced a lot. This also helps to improve my hair growth. I am very satisfied using hair oil and shampoo and I highly recommend this hair oil and shampoo.</p>
       <p class="text-gray-600 font-medium text-center">Hansa J Thattil (Assistant professor FISAT)</p>
     </div>
+
     <div class="review-card bg-white rounded-lg shadow-md p-8">
       <p class="text-center text-gray-950">I have personally used Vaidyamrutham
         Ayurvedic Hair Oil and Aditi shampoo. Both
@@ -363,25 +352,12 @@ header {
     </div> 
 
     <div class="review-card bg-white rounded-lg shadow-md p-8">
-      <p class="text-center text-gray-950">എന്റെ രണ്ടാമത്തെ delivery കഴിഞ്ഞപ്പോൾ
-        മുതൽ നല്ല രീതിയിൽ എനിക്ക് മുടി
-        കൊഴിച്ചിൽ ഉണ്ടായിരുന്നു അത്യാവശ്യം
-        നീളം ഉള്ള frizzy ഹെയർ ആണ് എന്റേത്
-        കുളികഴിഞ്ഞു മുടി ചീകാൻ
-        പേടിയായിരുന്നു അതുപോലെ മുടി
-        കൊഴിയുന്നുണ്ടാർന്നു.ഇപ്പൊ ഒരു 10 മാസം
-        ആയിട്ട് ഞാൻ വൈദ്യാമൃതം ഹെയർ
-        ഓയിലും ഷാംപൂ ആണ് ഉപയോഗിക്കുന്നത്
-        ..സത്യം പറഞ്ഞാൽ ഇത്രേം മാറ്റം ഉണ്ടാകും
-        എന്ന് ഒട്ടും പ്രതീക്ഷിച്ചില്ല,മുൻപത്തെ വെച്ച്
+      <p class="text-center text-gray-950">
+      ഒട്ടും പ്രതീക്ഷിച്ചില്ല,മുൻപത്തെ വെച്ച്
         നോക്കുവാണേൽ ഇപ്പോ മുടികൊഴിച്ചിൽ
         ഇല്ലെന്നു തന്നെ പറയാം മുടിയുടെ frizzines
-        ഒക്കെ മാറി ശെരിക്കും soft ആയി ഷാംപൂ
-        ലെ chemicals കൊണ്ടാണ് frizines
-        ഉണ്ടാവണത് എന്ന് അന്ന് പറഞ്ഞപ്പോൾ
-        ഞാൻ വിശ്വസിച്ചില്ലായിരുന്നു
-        അനുഭവത്തിലൂടെ മനസ്സിലായി ..
-        Really thank you so much</p>
+        ഒക്കെ മാറി ശെരിക്കും soft ആയി 
+        അനുഭവത്തിലൂടെ മനസ്സിലായി ..</p>
       <p class="text-gray-600 font-medium text-center mt-2">Sony</p>
     </div>
     <!-- Add more testimonial cards here -->
@@ -433,8 +409,8 @@ header {
 
  
 
-<div class=" h-500px">
-  <div class="max-w-screen-xl mx-auto px-1 py-8">
+<div >
+  <div class="max-w-screen-xl mx-auto px-0 py-2">
     <div class="flex justify-between items-center">
       <div class="flex items-center space-x-4">
         <img src="img/logo_name.png" alt="Logo" class="h-10">
