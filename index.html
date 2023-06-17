@@ -9,7 +9,8 @@
   <link rel="icon" 
      type="image/png" 
      href="img/logo.png">
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="
+    dist/output.css">
 </head>
 
 
@@ -130,6 +131,9 @@
 
 header {
   margin-top: 0;
+}
+.image-container {
+  margin-right: 0.75rem; /* Adjust the margin as per your preference */
 }
 
 .footer {
@@ -307,12 +311,18 @@ header {
   
 </div>
   
-  
 <h1 id="gallery" class="text-center text-3xl mt-10 font-semibold font-arima">Gallery</h1>
-<div class="flex flex-row flex-wrap justify-center items-center  gap-4 ">
-  <img src="img/OIL.jpg" alt="" class="h-64 flex-auto object-contain rounded-md">
-<img src="img/SHAMPOO.jpg" alt="" class="h-64 flex-auto object-contain rounded-md">
+<div class="flex flex-row flex-wrap justify-center items-center gap-3">
+  <div class="image-container">
+    <img src="img/OIL.jpg" alt="" class="h-64 object-contain rounded-md">
+  </div>
+  <div class="image-container">
+    <img src="img/SHAMPOO.jpg" alt="" class="h-64 object-contain rounded-md">
+  </div>
 </div>
+
+
+
 
 <!-- Testimonials -->
 <h1 id="testimonials" class="text-center text-3xl m-10 font-semibold font-arima">Testimonials</h1>

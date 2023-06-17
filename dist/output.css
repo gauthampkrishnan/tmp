@@ -848,10 +848,6 @@ video {
   flex: 1 1 0%;
 }
 
-.flex-auto{
-  flex: 1 1 auto;
-}
-
 .flex-none{
   flex: none;
 }
@@ -923,6 +919,10 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-3{
+  gap: 0.75rem;
 }
 
 .gap-4{
